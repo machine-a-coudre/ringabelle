@@ -6,7 +6,16 @@
           "Home.title": "Home",
           "Home.describe": "Simple home page.",
           "Stats.title": "Stats",
-          "Stats.describe": "Simple stats dashboard."
-        }
+          "Stats.describe": "Simple stats dashboard.",
+          "Link.dashboard.slug": "dashboard",
+          "Link.dashboard.tooltip": "Dasboard",
+          "Link.statistics.slug": "statistics",
+          "Link.statistics.tooltip": "Stats",
+          "Link.parameters.slug": "parameters",
+          "Link.parameters.tooltip": "Parameters",
+          "Action.toggle.darkMode": "Toggle dark mode",
+          "Action.toggle.lightMode": "Toggle light mode",
+          "Action.logout": "Logout"
+      }
     }
 }
