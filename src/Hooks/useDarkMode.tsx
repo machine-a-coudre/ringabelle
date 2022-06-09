@@ -25,6 +25,7 @@ const useLocalStorage = (key: string, initialValue?: string) => {
       console.log(error);
     }
   };
+
   return [storedValue, setValue];
 };
 
@@ -33,14 +34,7 @@ const useDarkMode = () => {
   const isEnabled = enabled;
 
   useEffect(() => {
-    const className = CLASS_NAME_DARK;
-    const bodyClass = window.document.body.classList;
-
-    if (isEnabled) {
-      bodyClass.add(className);
-    } else {
-      bodyClass.remove(className);
-    }
+    window.document.body.classList.toggle(CLASS_NAME_DARK, isEnabled);
   }, [enabled, isEnabled]);
 
   return [enabled, setEnabled];
