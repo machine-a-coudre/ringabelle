@@ -7,6 +7,7 @@ Ringabelle is a tiny tiny dashboard made with React.
 
 - Translation with react-i18next
 - Styling with TailwindCSS
+- Light and dark mode theme
 - Routes with react-router-dom
 - all in Typescript
 
