@@ -1,0 +1,12 @@
+{
+    "en": {
+      "translation": {
+          "Dashboard.title": "Dashboard",
+          "Dashboard.describe": "Simple dashboard.",
+          "Home.title": "Home",
+          "Home.describe": "Simple home page.",
+          "Stats.title": "Stats",
+          "Stats.describe": "Simple stats dashboard."
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import-normalize;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@layer components {
+  #root {
+    @apply bg-gray-100 dark:bg-gray-700
+      h-screen
+  }
+
+  .sidebar-icon {
+    @apply relative flex items-center justify-center 
+      h-12 w-12 mt-2 mb-2 mx-auto
+       hover:bg-gray-400 dark:hover:bg-gray-600
+       text-gray-500 hover:text-white dark:text-white
+       rounded-3xl
+      transition-all duration-300 ease-linear
+      cursor-pointer;
+  }
+
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md
+    text-white bg-gray-900 
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-left;
+  }
+
+  .content-container {
+    @apply flex flex-col 
+    text-gray-700 dark:text-gray-200
+    m-0 ml-24 mt-6
+    h-full w-full 
+    overflow-hidden;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-500 dark:bg-blue-400;
+  }
+}
