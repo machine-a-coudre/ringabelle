@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEventHandler } from 'react';
 import { useTranslation } from 'react-i18next';
 import { CgLogOff } from 'react-icons/cg';
 import { AiOutlineDashboard } from 'react-icons/ai';
@@ -10,16 +10,28 @@ import { Link } from 'react-router-dom';
 
 import IconSwitchTheme from './IconSwitchTheme';
 
-const SideBarIcon = ({ icon, tooltip, className = '' }: { icon: React.ReactNode, tooltip?: string, className?: string }) => (
-  <div className={`sidebar-icon group ${className}`}>
-    {icon}
-    {tooltip
+const SideBarIcon = ({
+  icon, tooltip, className = '', onClickHandler,
+}:
+{
+  icon: React.ReactNode,
+  tooltip?: string, className?: string,
+  onClickHandler?: MouseEventHandler }) => (
+    <div
+      className={`sidebar-icon group ${className}`}
+      onClick={onClickHandler}
+      onKeyUp={() => {}}
+      tabIndex={0}
+      role="button"
+    >
+      {icon}
+      {tooltip
     && (
     <span className="sidebar-tooltip group-hover:scale-100">
       {tooltip}
     </span>
     )}
-  </div>
+    </div>
 );
 
 function NavItem({ to, icon, tooltip }:
@@ -43,7 +55,7 @@ function NavBar() {
   );
 }
 
-const SideBar = () => {
+const SideBar = ({ onLogout = () => {} }: { onLogout?: Function }) => {
   const { t } = useTranslation();
 
   return (
@@ -71,6 +83,7 @@ const SideBar = () => {
             <SideBarIcon
               icon={<CgLogOff size="28" />}
               tooltip={t('Action.logout')}
+              onClickHandler={() => { onLogout(); }}
             />
           </div>
         </div>

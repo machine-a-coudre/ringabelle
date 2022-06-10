@@ -1,6 +1,7 @@
 {
     "en": {
       "translation": {
+          "Login.title": "Welcome stranger!",
           "Dashboard.title": "Dashboard",
           "Dashboard.describe": "Simple dashboard.",
           "Home.title": "Home",
