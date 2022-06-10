@@ -8,11 +8,11 @@ import './index.css';
 // eslint-disable-next-line import/extensions
 import locales from './locales/en.json';
 import App from './App';
-import Dashboard from './Pages/Dashboard';
-import Home from './Pages/Home';
-import Stats from './Pages/Stats';
-import Page404 from './Pages/Page404';
-import Parameters from './Pages/Parameters';
+import Dashboard from './pages/Dashboard';
+import Home from './pages/Home';
+import Stats from './pages/Stats';
+import Page404 from './pages/Page404';
+import Parameters from './pages/Parameters';
 
 i18n
   .use(initReactI18next)

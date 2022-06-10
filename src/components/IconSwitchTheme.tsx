@@ -1,5 +1,5 @@
 import React from 'react';
-import useDarkMode from '../Hooks/useDarkMode';
+import useDarkMode from '../hooks/useDarkMode';
 
 const IconSwitchTheme = ({ icon, iconDark }:
   { icon: React.ReactNode, iconDark: React.ReactNode }) => {
