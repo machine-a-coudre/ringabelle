@@ -7,6 +7,8 @@
           "Home.describe": "Simple home page.",
           "Stats.title": "Stats",
           "Stats.describe": "Simple stats dashboard.",
+          "Parameters.title": "Parameters",
+          "Parameters.describe": "Parameters.",
           "Link.dashboard.slug": "dashboard",
           "Link.dashboard.tooltip": "Dasboard",
           "Link.statistics.slug": "statistics",

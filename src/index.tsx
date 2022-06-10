@@ -12,6 +12,7 @@ import Dashboard from './Pages/Dashboard';
 import Home from './Pages/Home';
 import Stats from './Pages/Stats';
 import Page404 from './Pages/Page404';
+import Parameters from './Pages/Parameters';
 
 i18n
   .use(initReactI18next)
@@ -34,7 +35,8 @@ ReactDOM
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="dashboard" element={<Dashboard />} />
-          <Route path="stats" element={<Stats />} />
+          <Route path="statistics" element={<Stats />} />
+          <Route path="parameters" element={<Parameters />} />
           <Route path="*" element={<Page404 />} />
         </Route>
       </Routes>

@@ -22,30 +22,26 @@ const SideBarIcon = ({ icon, tooltip, className = '' }: { icon: React.ReactNode,
   </div>
 );
 
-const NavBar = () => {
+function NavItem({ to, icon, tooltip }:
+  { to: string, icon: React.ReactNode, tooltip: string }) {
+  return (
+    <Link to={to}>
+      <SideBarIcon icon={icon} tooltip={tooltip} />
+    </Link>
+  );
+}
+
+function NavBar() {
   const { t } = useTranslation();
 
   return (
     <nav>
-      <Link to="/dashboard">
-        <SideBarIcon
-          icon={<AiOutlineDashboard size="25" />}
-          tooltip={t('Link.dashboard.tooltip')}
-        />
-      </Link>
-      <Link to="/stats">
-        <SideBarIcon
-          icon={<VscGraph size="25" />}
-          tooltip={t('Link.statistics.tooltip')}
-        />
-      </Link>
-      <SideBarIcon
-        icon={<VscGear size="25" />}
-        tooltip={t('Link.parameters.tooltip')}
-      />
+      <NavItem to={`/${t('Link.dashboard.slug')}`} icon={<AiOutlineDashboard size="25" />} tooltip={t('Link.dashboard.tooltip')} />
+      <NavItem to={`/${t('Link.statistics.slug')}`} icon={<VscGraph size="25" />} tooltip={t('Link.statistics.tooltip')} />
+      <NavItem to={`/${t('Link.parameters.slug')}`} icon={<VscGear size="25" />} tooltip={t('Link.parameters.tooltip')} />
     </nav>
   );
-};
+}
 
 const SideBar = () => {
   const { t } = useTranslation();
