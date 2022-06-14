@@ -2,6 +2,13 @@
     "en": {
       "translation": {
           "Login.title": "Welcome stranger!",
+          "Login.form.login.label": "Login",
+          "Login.form.password.label": "Password",
+          "Login.form.forgotPassword": "I forgot my password",
+          "Login.form.forgotPassword.a.title": "Reset your password",
+          "Login.form.noAccount": "Don't have any account?",
+          "Login.form.noAccount.a.title": "Create a new account",
+          "Login.form.signIn": "Sign in",
           "Dashboard.title": "Dashboard",
           "Dashboard.describe": "Simple dashboard.",
           "Home.title": "Home",
