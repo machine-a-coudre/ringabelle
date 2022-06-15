@@ -9,6 +9,7 @@
           "Login.form.noAccount": "Don't have any account?",
           "Login.form.noAccount.a.title": "Create a new account",
           "Login.form.signIn": "Sign in",
+          "Login.form.submit.button": "Login",
           "Dashboard.title": "Dashboard",
           "Dashboard.describe": "Simple dashboard.",
           "Home.title": "Home",
