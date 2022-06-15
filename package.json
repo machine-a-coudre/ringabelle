@@ -10,7 +10,7 @@
     "prod": "webpack --config webpack.prod.js --node-env=production"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/plugin-proposal-class-properties": "^7.17.12",
