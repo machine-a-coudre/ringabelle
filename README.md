@@ -27,6 +27,7 @@ Ringabelle is a tiny tiny dashboard made with React.
 
 ![Screenshot](./public/Ringabelle_login_screen.png)
 ![Screenshot](./public/Ringabelle_screenshot.png)
+![Screenshot](./public/Ringabelle_darkmode.png)
 
   
 
